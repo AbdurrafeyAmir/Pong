@@ -88,13 +88,13 @@ while True:
     # Border checking
     if ball.ycor() > 290:
         ball.sety(290)
-        winsound.PlaySound(r"C:\Users\abdur\OneDrive\Desktop\Games\Pong\bounce.wav", winsound.SND_ASYNC)
+        winsound.PlaySound(r"\bounce.wav", winsound.SND_ASYNC)
         ball.dy *= -1
         
 
     if ball.ycor() < -290:
         ball.sety(-290)
-        winsound.PlaySound(r"C:\Users\abdur\OneDrive\Desktop\Games\Pong\bounce.wav", winsound.SND_ASYNC)
+        winsound.PlaySound(r"\bounce.wav", winsound.SND_ASYNC)
         ball.dy *= -1
         
     
@@ -115,12 +115,12 @@ while True:
     # Paddle and ball collisions
     if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() -40):
         ball.setx(340)
-        winsound.PlaySound(r"C:\Users\abdur\OneDrive\Desktop\Games\Pong\bounce.wav", winsound.SND_ASYNC)
+        winsound.PlaySound(r"\bounce.wav", winsound.SND_ASYNC)
         ball.dx *= -1
         
 
     if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() -40):
         ball.setx(-340)
-        winsound.PlaySound(r"C:\Users\abdur\OneDrive\Desktop\Games\Pong\bounce.wav", winsound.SND_ASYNC)
+        winsound.PlaySound(r"\bounce.wav", winsound.SND_ASYNC)
         ball.dx *= -1
         
